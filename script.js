@@ -2,13 +2,15 @@
 // Navigation scroll effect
 // ===========================
 const nav = document.getElementById('main-nav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 20) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
-});
+if (nav) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+}
 
 // ===========================
 // Hamburger menu toggle
@@ -16,18 +18,20 @@ window.addEventListener('scroll', () => {
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobile-nav');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobileNav.classList.toggle('open');
-});
-
-// Close mobile nav when a link is clicked
-mobileNav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    mobileNav.classList.remove('open');
+if (hamburger && mobileNav) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileNav.classList.toggle('open');
   });
-});
+
+  // Close mobile nav when a link is clicked
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('open');
+    });
+  });
+}
 
 // ===========================
 // Scroll-triggered fade-in
