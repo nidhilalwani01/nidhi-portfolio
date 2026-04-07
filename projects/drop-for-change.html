@@ -3,17 +3,95 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta
+		name="description"
+		content="Drop for Change – a charity: water-inspired browser game built with HTML, CSS, and JavaScript featuring scoring, weather interactions, and responsive design."
+	/>
 	<title>Drop for Change | Nidhi Lalwani</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+		rel="stylesheet"
+	/>
 	<link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-	<main class="section">
-		<div class="container narrow">
-			<p class="eyebrow">Campaign Concept</p>
-			<h1>Drop for Change</h1>
-			<p class="hero-copy">A gamified awareness campaign concept encouraging clean water action through playful interactions and simple progress cues.</p>
-			<p><a class="text-link" href="../index.html">Back to homepage</a></p>
+	<!-- Skip link lets keyboard users jump straight to content -->
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="../index.html" aria-label="Nidhi Lalwani home">
+				<img
+					class="brand-mark"
+					src="../img/Screenshot%202025-05-29%20134319.png"
+					alt="Nidhi Lalwani logo"
+				/>
+			</a>
+			<div class="nav-actions">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+					<span class="nav-toggle-lines" aria-hidden="true">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+					<span class="nav-toggle-label">Menu</span>
+				</button>
+				<nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+					<ul>
+						<li><a href="../index.html#about">About</a></li>
+						<li><a href="../index.html#projects">Projects</a></li>
+						<li><a href="../index.html#skills">Skills</a></li>
+						<li><a href="../index.html#experience">Resume</a></li>
+						<li><a href="../index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
+	</header>
+
+	<main id="main-content">
+		<!-- Project hero -->
+		<section class="section">
+			<div class="container narrow">
+				<p class="eyebrow">Browser Game &nbsp;·&nbsp; 2023</p>
+				<h1>Drop for Change</h1>
+				<p class="hero-copy">A charity: water-inspired browser game built with HTML, CSS, and JavaScript featuring scoring, weather interactions, and engagement-focused responsive design.</p>
+				<!-- Tags show the skills used on this project -->
+				<ul class="project-tags" aria-label="Skills used in this project">
+					<li>HTML/CSS/JavaScript</li>
+					<li>Game Mechanics</li>
+					<li>Responsive Design</li>
+					<li>Engagement UX</li>
+					<li>Gamification</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Project overview -->
+		<section class="section" style="padding-top: 0;">
+			<div class="container narrow">
+				<h2>Overview</h2>
+				<p>Drop for Change is a browser-based game designed to raise awareness of the global clean water crisis. Inspired by charity: water's mission, the game uses simple drag-and-drop mechanics and a live scoring system to keep players engaged while communicating real impact statistics.</p>
+				<p>Weather interaction layers add a dynamic challenge — players must adapt their strategy as conditions change, creating re-playability and tying the gameplay experience directly to the real-world variability of water access.</p>
+
+				<h2>My Role</h2>
+				<p>Concept, design, and front-end development: game mechanic design, JavaScript logic, responsive CSS layout, and engagement UX strategy.</p>
+
+				<p style="margin-top: 2.5rem;">
+					<a class="btn btn-secondary" href="../index.html#projects">← Back to Projects</a>
+				</p>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Nidhi Lalwani. Designed with care.</p>
+		</div>
+	</footer>
+
+	<script src="../script.js"></script>
 </body>
 </html>

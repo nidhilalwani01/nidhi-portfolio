@@ -3,17 +3,94 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Intel Sustainability Summit Check-In Dashboard | Nidhi Lalwani</title>
+	<meta
+		name="description"
+		content="Intel Summit Check-In Dashboard – an interactive event dashboard that tracks attendance, surfaces team analytics, and visualizes live progress."
+	/>
+	<title>Intel Summit Check-In Dashboard | Nidhi Lalwani</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+		rel="stylesheet"
+	/>
 	<link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-	<main class="section">
-		<div class="container narrow">
-			<p class="eyebrow">Dashboard UI</p>
-			<h1>Intel Sustainability Summit - Check-In Dashboard</h1>
-			<p class="hero-copy">A data-rich event dashboard designed for quick registration review, status tracking, and clear operational visibility.</p>
-			<p><a class="text-link" href="../index.html">Back to homepage</a></p>
+	<!-- Skip link lets keyboard users jump straight to content -->
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="../index.html" aria-label="Nidhi Lalwani home">
+				<img
+					class="brand-mark"
+					src="../img/Screenshot%202025-05-29%20134319.png"
+					alt="Nidhi Lalwani logo"
+				/>
+			</a>
+			<div class="nav-actions">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+					<span class="nav-toggle-lines" aria-hidden="true">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+					<span class="nav-toggle-label">Menu</span>
+				</button>
+				<nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+					<ul>
+						<li><a href="../index.html#about">About</a></li>
+						<li><a href="../index.html#projects">Projects</a></li>
+						<li><a href="../index.html#skills">Skills</a></li>
+						<li><a href="../index.html#experience">Resume</a></li>
+						<li><a href="../index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
+	</header>
+
+	<main id="main-content">
+		<!-- Project hero -->
+		<section class="section">
+			<div class="container narrow">
+				<p class="eyebrow">Dashboard UI &nbsp;·&nbsp; 2024</p>
+				<h1>Intel Summit Check-In Dashboard</h1>
+				<p class="hero-copy">An interactive event check-in dashboard that tracks attendance, surfaces team analytics, and visualizes live progress for faster decisions.</p>
+				<!-- Tags show the skills used on this project -->
+				<ul class="project-tags" aria-label="Skills used in this project">
+					<li>Dashboard UI</li>
+					<li>Attendance Tracking</li>
+					<li>Team Analytics</li>
+					<li>Data Visualization</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Project overview -->
+		<section class="section" style="padding-top: 0;">
+			<div class="container narrow">
+				<h2>Overview</h2>
+				<p>The Intel Sustainability Summit needed a real-time check-in solution that gave event coordinators instant visibility into attendance status, team breakdown, and capacity metrics. The dashboard was designed to surface the most important numbers at a glance, with drill-down views for deeper investigation.</p>
+				<p>Data visualizations were chosen to be immediately scannable under time pressure, using colour, size, and labelling to communicate status without requiring any prior training from the user.</p>
+
+				<h2>My Role</h2>
+				<p>UI design and front-end implementation: component design, data visualisation choices, responsive layout, and handoff documentation for the development team.</p>
+
+				<p style="margin-top: 2.5rem;">
+					<a class="btn btn-secondary" href="../index.html#projects">← Back to Projects</a>
+				</p>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Nidhi Lalwani. Designed with care.</p>
+		</div>
+	</footer>
+
+	<script src="../script.js"></script>
 </body>
 </html>

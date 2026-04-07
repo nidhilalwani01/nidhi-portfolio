@@ -3,17 +3,94 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta
+		name="description"
+		content="NASA Data Explorer – a NASA-inspired interactive web app combining space imagery and data through structured storytelling and clear visual hierarchy."
+	/>
 	<title>NASA Data Explorer | Nidhi Lalwani</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+		rel="stylesheet"
+	/>
 	<link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-	<main class="section">
-		<div class="container narrow">
-			<p class="eyebrow">Interactive Experience</p>
-			<h1>NASA Data Explorer</h1>
-			<p class="hero-copy">An interactive space data experience built to help users explore scientific datasets through filtering and comparison.</p>
-			<p><a class="text-link" href="../index.html">Back to homepage</a></p>
+	<!-- Skip link lets keyboard users jump straight to content -->
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="../index.html" aria-label="Nidhi Lalwani home">
+				<img
+					class="brand-mark"
+					src="../img/Screenshot%202025-05-29%20134319.png"
+					alt="Nidhi Lalwani logo"
+				/>
+			</a>
+			<div class="nav-actions">
+				<button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+					<span class="nav-toggle-lines" aria-hidden="true">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+					<span class="nav-toggle-label">Menu</span>
+				</button>
+				<nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+					<ul>
+						<li><a href="../index.html#about">About</a></li>
+						<li><a href="../index.html#projects">Projects</a></li>
+						<li><a href="../index.html#skills">Skills</a></li>
+						<li><a href="../index.html#experience">Resume</a></li>
+						<li><a href="../index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
+	</header>
+
+	<main id="main-content">
+		<!-- Project hero -->
+		<section class="section">
+			<div class="container narrow">
+				<p class="eyebrow">Interactive Experience &nbsp;·&nbsp; 2023</p>
+				<h1>NASA Data Explorer</h1>
+				<p class="hero-copy">A NASA-inspired interactive web app combining space imagery and data through structured storytelling, responsive layouts, and clear visual hierarchy.</p>
+				<!-- Tags show the skills used on this project -->
+				<ul class="project-tags" aria-label="Skills used in this project">
+					<li>Data Visualization</li>
+					<li>Responsive UI</li>
+					<li>Visual Hierarchy</li>
+					<li>Storytelling</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Project overview -->
+		<section class="section" style="padding-top: 0;">
+			<div class="container narrow">
+				<h2>Overview</h2>
+				<p>NASA Data Explorer brings publicly available space data to life through an interface built for curiosity. The project combined imagery from NASA's open APIs with structured content blocks to create an immersive browsing experience that felt scientific yet approachable.</p>
+				<p>The layout uses strong typographic hierarchy and intentional whitespace to guide users through dense data without overwhelming them, while the responsive design ensures the experience holds up on any screen size.</p>
+
+				<h2>My Role</h2>
+				<p>Interactive design and front-end development: visual system design, API integration planning, responsive HTML/CSS build, and user flow mapping.</p>
+
+				<p style="margin-top: 2.5rem;">
+					<a class="btn btn-secondary" href="../index.html#projects">← Back to Projects</a>
+				</p>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Nidhi Lalwani. Designed with care.</p>
+		</div>
+	</footer>
+
+	<script src="../script.js"></script>
 </body>
 </html>
