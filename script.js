@@ -49,6 +49,48 @@ if (navToggle && siteNav) {
 	});
 }
 
+const projectTrack = document.querySelector('.project-track');
+const projectGrid = document.querySelector('.project-grid');
+const projectPrevButton = document.querySelector('.carousel-arrow[data-direction="prev"]');
+const projectNextButton = document.querySelector('.carousel-arrow[data-direction="next"]');
+
+if (projectTrack && projectGrid && projectPrevButton && projectNextButton) {
+	const getScrollAmount = () => {
+		const firstCard = projectGrid.querySelector('.project-card');
+		if (!firstCard) {
+			return Math.max(projectTrack.clientWidth * 0.85, 280);
+		}
+
+		const gapValue = window.getComputedStyle(projectGrid).gap;
+		const gap = Number.parseFloat(gapValue) || 0;
+		return firstCard.getBoundingClientRect().width + gap;
+	};
+
+	const updateCarouselArrows = () => {
+		const maxScrollLeft = projectTrack.scrollWidth - projectTrack.clientWidth;
+		projectPrevButton.disabled = projectTrack.scrollLeft <= 2;
+		projectNextButton.disabled = projectTrack.scrollLeft >= maxScrollLeft - 2;
+	};
+
+	projectPrevButton.addEventListener('click', () => {
+		projectTrack.scrollBy({
+			left: -getScrollAmount(),
+			behavior: 'smooth'
+		});
+	});
+
+	projectNextButton.addEventListener('click', () => {
+		projectTrack.scrollBy({
+			left: getScrollAmount(),
+			behavior: 'smooth'
+		});
+	});
+
+	projectTrack.addEventListener('scroll', updateCarouselArrows, { passive: true });
+	window.addEventListener('resize', updateCarouselArrows);
+	updateCarouselArrows();
+}
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	anchor.addEventListener('click', (event) => {
 		const targetId = anchor.getAttribute('href');
