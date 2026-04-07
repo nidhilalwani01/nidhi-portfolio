@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NASA Data Explorer — Case Study by Nidhi Lalwani" />
+  <title>NASA Data Explorer — Nidhi Lalwani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Nidhi<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Work</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#resume">Resume</a></li>
+        <li><a href="../index.html#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Work</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Project Hero -->
+  <div class="project-hero">
+    <div class="project-hero-inner">
+      <a href="../index.html#projects" class="project-back">← Back to Work</a>
+      <span class="project-hero-tag">Data Visualization · Civic Tech</span>
+      <h1>NASA Data Explorer</h1>
+      <p class="overview">
+        An intuitive data exploration tool that makes NASA's vast open datasets
+        accessible to the public through rich visual interfaces, guided discovery
+        flows, and clear explanatory context for non-expert audiences.
+      </p>
+      <div class="project-meta">
+        <div class="meta-item"><h4>Role</h4><p>UX Designer (Academic Project)</p></div>
+        <div class="meta-item"><h4>Duration</h4><p>10 weeks (2023)</p></div>
+        <div class="meta-item"><h4>Tools</h4><p>Figma, Observable, D3.js concepts</p></div>
+        <div class="meta-item"><h4>Type</h4><p>Web Application</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cover Image -->
+  <div class="container">
+    <div class="project-cover">
+      <div class="project-cover-placeholder placeholder-orange" style="border-radius: 14px;">
+        NASA Data Explorer — Cover Image
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Content -->
+  <div class="project-content">
+
+    <div class="project-section fade-in">
+      <h2>Overview</h2>
+      <p>
+        NASA provides hundreds of open datasets covering climate, astronomy,
+        earth science, and space exploration. While these datasets are publicly
+        available, they're largely inaccessible to people without scientific
+        or technical backgrounds. This project was born from a simple question:
+        what if anyone could explore space data the way scientists do?
+      </p>
+    </div>
+
+    <div class="project-section fade-in">
+      <h2>Problem</h2>
+      <p>
+        NASA's existing data portals are designed for researchers, not the public.
+        They require domain knowledge to navigate, use technical jargon, and
+        provide no guided discovery — leaving curious non-experts feeling lost
+        and unable to engage with fascinating scientific data.
+      </p>
+      <ul>
+        <li>Portals require prior knowledge to find relevant datasets</li>
+        <li>No contextual explanations or "why this matters" framing</li>
+        <li>Raw data tables without accessible visualization options</li>
+        <li>No guided entry points for exploratory browsing</li>
+        <li>Overwhelming information architecture with 200+ dataset categories</li>
+      </ul>
+      <div class="img-placeholder-block"><span>NASA Portal Audit / Heuristic Evaluation</span></div>
+    </div>
+
+    <div class="project-section fade-in">
+      <h2>Goals</h2>
+      <ul>
+        <li>Lower the barrier to entry for non-expert public users</li>
+        <li>Create guided "discovery paths" organized by curiosity and interest</li>
+        <li>Pair data visualizations with plain-language explanations</li>
+        <li>Enable sharing of interesting data stories on social media</li>
+        <li>Remain faithful to the scientific integrity of the underlying data</li>
+      </ul>
+    </div>
+
+    <div class="project-section fade-in">
+      <h2>Process</h2>
+      <p>
+        <strong>User Research:</strong> Recruited 10 participants across two segments —
+        "space enthusiasts with no science background" and "high school students."
+        Ran contextual inquiry sessions observing how they tried to use NASA's
+        existing portals, then interviewed them about their curiosity and questions.
+      </p>
+      <div class="img-placeholder-block"><span>User Research Synthesis</span></div>
+      <p>
+        <strong>Opportunity Areas:</strong> Three major opportunities emerged:
+        (1) Curiosity-Led Navigation — organizing content around questions people
+        actually ask; (2) Visual-First Exploration — leading with striking
+        visualizations before data tables; (3) Contextual Storytelling — every
+        dataset paired with a narrative hook.
+      </p>
+      <p>
+        <strong>IA &amp; Interaction Design:</strong> Designed a card-based browsing
+        interface organized into themes (Earth, Space, Climate, Missions). Each
+        theme had curated "starter stories" to draw users in before offering
+        deeper data exploration.
+      </p>
+      <div class="img-placeholder-block"><span>Information Architecture & Wireflows</span></div>
+      <p>
+        <strong>Visualization Design:</strong> Collaborated with an information design
+        student to sketch and prototype 8 different chart types for key datasets.
+        Ran preference testing to identify which visualizations resonated most
+        with our target audience.
+      </p>
+      <div class="img-placeholder-block"><span>Visualization Explorations</span></div>
+      <div class="img-placeholder-block"><span>Final Interface — High Fidelity</span></div>
+    </div>
+
+    <div class="project-section fade-in">
+      <h2>Outcome</h2>
+      <ul>
+        <li>Usability test completion rate: <strong>92%</strong> (vs. 34% for current NASA portal)</li>
+        <li>Average session length in prototype: <strong>8.3 minutes</strong></li>
+        <li>8 of 10 participants said they'd return to use it regularly</li>
+        <li>Project presented at university design symposium</li>
+        <li>Selected as a top student project by faculty jury</li>
+      </ul>
+    </div>
+
+    <div class="project-section fade-in">
+      <h2>Reflection</h2>
+      <p>
+        The most valuable lesson from this project was about the power of
+        a good "entry point." Users didn't need all the data — they needed
+        one compelling hook that made them want to explore further. Great
+        design for public data tools is fundamentally about igniting curiosity,
+        not delivering completeness.
+      </p>
+    </div>
+
+    <div class="project-cta fade-in">
+      <a href="#" class="btn btn-primary">View Prototype</a>
+      <a href="https://github.com/nidhilalwani01" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+    </div>
+
+    <div class="project-nav">
+      <a href="intel-dashboard.html" class="btn btn-ghost">← Intel Dashboard</a>
+      <a href="drop-for-change.html" class="btn btn-outline">Next: Drop for Change →</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <p>&copy; 2024 Nidhi Lalwani. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#projects">All Projects</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
