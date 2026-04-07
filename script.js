@@ -1,3 +1,41 @@
+// Dark mode toggle
+const themeToggle = document.querySelector('#themeToggle');
+const htmlElement = document.documentElement;
+const THEME_KEY = 'theme-preference';
+
+// Load theme preference from localStorage or system preference
+const loadTheme = () => {
+	const saved = localStorage.getItem(THEME_KEY);
+	if (saved) {
+		return saved;
+	}
+	return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+
+// Apply theme
+const applyTheme = (theme) => {
+	if (theme === 'dark') {
+		htmlElement.classList.add('dark-mode');
+		themeToggle.setAttribute('aria-pressed', 'true');
+	} else {
+		htmlElement.classList.remove('dark-mode');
+		themeToggle.setAttribute('aria-pressed', 'false');
+	}
+	localStorage.setItem(THEME_KEY, theme);
+};
+
+// Initialize theme on page load
+const currentTheme = loadTheme();
+applyTheme(currentTheme);
+
+// Toggle theme on button click
+if (themeToggle) {
+	themeToggle.addEventListener('click', () => {
+		const isDark = htmlElement.classList.contains('dark-mode');
+		applyTheme(isDark ? 'light' : 'dark');
+	});
+}
+
 const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('#site-nav');
 const navLinks = document.querySelectorAll('.site-nav a');
