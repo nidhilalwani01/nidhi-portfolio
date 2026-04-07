@@ -1,0 +1,16 @@
+{
+  "name": "nidhi-portfolio",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  },
+  "forwardPorts": [
+    5500
+  ],
+  "postCreateCommand": "node --version"
+}
