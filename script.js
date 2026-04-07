@@ -14,6 +14,33 @@ if (navToggle && siteNav) {
 		navToggle.setAttribute('aria-expanded', String(!isOpen));
 	});
 
+	document.addEventListener('click', (event) => {
+		const isOpen = siteNav.getAttribute('data-open') === 'true';
+		if (!isOpen) {
+			return;
+		}
+
+		const target = event.target;
+		if (!(target instanceof Node)) {
+			return;
+		}
+
+		if (!siteNav.contains(target) && !navToggle.contains(target)) {
+			siteNav.setAttribute('data-open', 'false');
+			navToggle.setAttribute('aria-expanded', 'false');
+		}
+	});
+
+	document.addEventListener('keydown', (event) => {
+		if (event.key !== 'Escape') {
+			return;
+		}
+
+		siteNav.setAttribute('data-open', 'false');
+		navToggle.setAttribute('aria-expanded', 'false');
+		navToggle.focus();
+	});
+
 	navLinks.forEach((link) => {
 		link.addEventListener('click', () => {
 			siteNav.setAttribute('data-open', 'false');
@@ -35,6 +62,17 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 		}
 
 		event.preventDefault();
-		target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		target.scrollIntoView({
+			behavior: prefersReducedMotion ? 'auto' : 'smooth',
+			block: 'start'
+		});
+
+		// Move focus for better keyboard/screen reader navigation on in-page links.
+		if (!target.hasAttribute('tabindex')) {
+			target.setAttribute('tabindex', '-1');
+		}
+		target.focus({ preventScroll: true });
 	});
 });

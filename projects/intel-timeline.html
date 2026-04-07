@@ -3,35 +3,234 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta
+		name="description"
+		content="Intel Sustainability Timeline Webpage case study focused on accessibility, responsive design, and localization-ready storytelling."
+	/>
 	<title>Intel Sustainability Timeline Webpage | Nidhi Lalwani</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+		rel="stylesheet"
+	/>
 	<link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-	<header class="site-header">
+<body class="case-page">
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="site-header" id="top">
 		<div class="container nav-wrap">
 			<a class="brand" href="../index.html" aria-label="Nidhi Lalwani home">
 				<img
 					class="brand-mark"
-					src="../img/Screenshot%202025-05-29%20134319.png"
+					src="../img/logos/nidhi-logo.png"
 					alt="Nidhi Lalwani logo"
 				/>
 			</a>
-			<a class="text-link" href="../index.html#projects">Back to projects</a>
+			<nav class="site-nav" aria-label="Case study links">
+				<ul>
+					<li><a href="#overview">Overview</a></li>
+					<li><a href="#process">Process</a></li>
+					<li><a href="#accessibility">Accessibility</a></li>
+					<li><a href="#outcome">Outcome</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
-	<main class="section">
-		<div class="container narrow">
-			<p class="eyebrow">Webpage Design</p>
-			<h1>Intel Sustainability Timeline Webpage</h1>
-			<figure class="project-media">
-				<img
-					src="../img/ChatGPT%20Image%20Feb%209,%202026,%2001_38_41%20PM.png"
-					alt="Intel Sustainability Timeline project visual"
-				/>
-			</figure>
-			<p class="hero-copy">A clean storytelling webpage for presenting sustainability milestones in a simple, scannable visual flow.</p>
-			<p><a class="text-link" href="../index.html">Back to homepage</a></p>
-		</div>
+
+	<main id="main-content">
+		<section class="section case-hero">
+			<div class="container case-hero-grid">
+				<div class="case-card">
+					<p class="eyebrow">Webpage Design and Front-End Case Study</p>
+					<h1>Intel Sustainability Timeline Webpage</h1>
+					<p class="case-subtitle">
+						An interactive, timeline-driven sustainability webpage that communicates Intel's
+						environmental milestones through structured storytelling, accessible content, and
+						responsive design.
+					</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href="#overview">Read Case Study</a>
+					</div>
+					<div class="case-action-group" aria-label="Project quick links">
+						<a class="btn btn-primary" href="#" data-optional-link="true" data-url="" hidden>Live Site</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>GitHub Repo</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>Watch Demo</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>Prototype</a>
+						<a class="btn btn-secondary" href="../index.html#projects">Back to Projects</a>
+					</div>
+				</div>
+
+				<aside class="case-card" aria-label="Project details">
+					<ul class="case-meta">
+						<li>
+							<strong>Project Type</strong>
+							<span>Interactive Sustainability Webpage</span>
+						</li>
+						<li>
+							<strong>Role</strong>
+							<span>UX/UI and Front-End Implementation</span>
+						</li>
+						<li>
+							<strong>Focus Areas</strong>
+							<span>Accessibility, Responsive Layout, Localization Readiness</span>
+						</li>
+					</ul>
+				</aside>
+			</div>
+		</section>
+
+		<section class="section" id="media">
+			<div class="container narrow case-layout">
+				<article class="case-card case-media-section">
+					<h2>Featured Visual</h2>
+					<figure class="featured-shot">
+						<img src="../img/projects/intel-timeline/intel-timeline-hero.png" alt="Featured hero image for Intel Sustainability Timeline Webpage" />
+						<figcaption>Timeline storytelling snapshot emphasizing milestone clarity and visual rhythm.</figcaption>
+					</figure>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="overview">
+			<div class="container narrow case-layout">
+				<article class="case-card">
+					<h2>Overview</h2>
+					<p>
+						This project presents Intel's sustainability progress through an interactive
+						timeline experience. The page was designed to make milestone data easier to
+						scan, compare, and understand while maintaining a clean visual rhythm for long
+						form storytelling.
+					</p>
+				</article>
+
+				<article class="case-card" id="problem">
+					<h2>Problem</h2>
+					<p>
+						Sustainability information is often dense and difficult to browse across devices.
+						Without clear structure, users can miss important environmental milestones or
+						struggle to understand progress over time.
+					</p>
+				</article>
+
+				<article class="case-card" id="goals">
+					<h2>Goals</h2>
+					<ul class="case-list">
+						<li>Create a timeline format that is easy to scan and navigate.</li>
+						<li>Maintain readable content hierarchy for data-rich storytelling.</li>
+						<li>Ensure accessibility and usability across interaction patterns.</li>
+						<li>Prepare layout behavior for right-to-left language contexts.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="process">
+					<h2>Design and Development Process</h2>
+					<ul class="case-list">
+						<li><strong>Content Structuring:</strong> Grouped milestones into a timeline sequence with consistent entry patterns.</li>
+						<li><strong>Layout Planning:</strong> Built a three-column structured section to balance chronology, context, and supporting details.</li>
+						<li><strong>Front-End Build:</strong> Implemented semantic HTML and responsive CSS breakpoints for desktop and mobile.</li>
+						<li><strong>Validation:</strong> Reviewed readability, interaction clarity, and task completion through usability checks.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="accessibility">
+					<h2>Accessibility Decisions</h2>
+					<ul class="case-list">
+						<li>Used semantic HTML to improve structure and assistive technology support.</li>
+						<li>Added meaningful alt text for timeline visuals and illustrations.</li>
+						<li>Applied clear form labeling and predictable focus behavior.</li>
+						<li>Improved text/background contrast for better readability.</li>
+						<li>Validated usability to reduce interaction friction in key sections.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="localization">
+					<h2>Localization and RTL Considerations</h2>
+					<p>
+						The layout was tested for browser translation and right-to-left adaptation. Key
+						content blocks and alignment patterns were built to remain coherent when text
+						direction changes, preserving hierarchy and reading flow in localized contexts.
+					</p>
+				</article>
+
+				<article class="case-card" id="responsive">
+					<h2>Responsive Design Decisions</h2>
+					<ul class="case-list">
+						<li>Used flexible grids to support desktop, tablet, and mobile widths.</li>
+						<li>Adjusted timeline spacing and card stacking for smaller screens.</li>
+						<li>Preserved visual hierarchy and scannability across breakpoints.</li>
+						<li>Kept interactive touch targets large enough for mobile usability.</li>
+					</ul>
+				</article>
+
+				<article class="case-card case-media-section" id="screenshots">
+					<h2>Screenshots and Mockups</h2>
+					<div class="media-grid" aria-label="Project screenshots">
+						<figure class="shot">
+							<img src="../img/projects/intel-timeline/intel-timeline-hero.png" alt="Intel timeline screenshot 1" />
+							<figcaption>Timeline overview section</figcaption>
+						</figure>
+						<figure class="shot">
+							<img src="../img/projects/intel-timeline/intel-timeline-hero.png" alt="Intel timeline screenshot 2" />
+							<figcaption>Three-column structured content section</figcaption>
+						</figure>
+						<figure class="shot">
+							<img src="../img/projects/intel-timeline/intel-timeline-hero.png" alt="Intel timeline screenshot 3" />
+							<figcaption>RTL or translated layout view</figcaption>
+						</figure>
+					</div>
+				</article>
+
+				<article class="case-card case-media-section" id="video-walkthrough" data-video-section hidden>
+					<h2>Video Walkthrough (Optional)</h2>
+					<div class="video-embed">
+						<iframe
+							data-video-url=""
+							title="Intel Sustainability Timeline walkthrough video walkthrough"
+							loading="lazy"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<p class="helper-note">Add your walkthrough URL in data-video-url when it is ready.</p>
+				</article>
+
+				<article class="case-card" id="outcome">
+					<h2>Final Outcome</h2>
+					<p>
+						The final webpage communicates sustainability milestones in a clearer and more
+						accessible format. The combination of structured content, responsive behavior,
+						and localization-aware design produced a stronger user experience for diverse
+						audiences and devices.
+					</p>
+				</article>
+
+				<article class="case-card" id="reflection">
+					<h2>Reflections</h2>
+					<ul class="case-list">
+						<li>Timeline storytelling is most effective when information chunks are predictable.</li>
+						<li>Accessibility improvements early in build reduce downstream revisions.</li>
+						<li>Localization planning should be part of layout strategy, not a post-launch patch.</li>
+						<li>Balancing visual polish with readability strengthens content credibility.</li>
+					</ul>
+				</article>
+				<article class="case-card" id="back-links">
+					<h2>Navigation</h2>
+					<div class="case-back-links">
+						<a class="text-link" href="../index.html">Back to Home</a>
+						<a class="text-link" href="../index.html#projects">Back to Projects</a>
+					</div>
+				</article>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Nidhi Lalwani. Designed with care.</p>
+		</div>
+	</footer>
+	<script src="project-page.js"></script>
 </body>
 </html>

@@ -3,35 +3,224 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Intel Sustainability Summit Check-In Dashboard | Nidhi Lalwani</title>
+	<meta
+		name="description"
+		content="Intel Sustainability Summit Check-In Dashboard case study focused on live event monitoring, attendance tracking, and real-time progress visualization."
+	/>
+	<title>Intel Sustainability Summit - Check-In Dashboard | Nidhi Lalwani</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+		rel="stylesheet"
+	/>
 	<link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-	<header class="site-header">
+<body class="case-page">
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="site-header" id="top">
 		<div class="container nav-wrap">
 			<a class="brand" href="../index.html" aria-label="Nidhi Lalwani home">
 				<img
 					class="brand-mark"
-					src="../img/Screenshot%202025-05-29%20134319.png"
+					src="../img/logos/nidhi-logo.png"
 					alt="Nidhi Lalwani logo"
 				/>
 			</a>
-			<a class="text-link" href="../index.html#projects">Back to projects</a>
+			<nav class="site-nav" aria-label="Case study links">
+				<ul>
+					<li><a href="#overview">Overview</a></li>
+					<li><a href="#approach">Approach</a></li>
+					<li><a href="#implementation">Implementation</a></li>
+					<li><a href="#outcome">Outcome</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
-	<main class="section">
-		<div class="container narrow">
-			<p class="eyebrow">Dashboard UI</p>
-			<h1>Intel Sustainability Summit - Check-In Dashboard</h1>
-			<figure class="project-media">
-				<img
-					src="../img/Screenshot%202026-04-06%20205952.png"
-					alt="Intel Sustainability Summit Check-In Dashboard visual"
-				/>
-			</figure>
-			<p class="hero-copy">A data-rich event dashboard designed for quick registration review, status tracking, and clear operational visibility.</p>
-			<p><a class="text-link" href="../index.html">Back to homepage</a></p>
-		</div>
+
+	<main id="main-content">
+		<section class="section case-hero">
+			<div class="container case-hero-grid">
+				<div class="case-card">
+					<p class="eyebrow">Dashboard UX and Front-End Case Study</p>
+					<h1>Intel Sustainability Summit - Check-In Dashboard</h1>
+					<p class="case-subtitle">
+						An interactive event operations dashboard built with HTML, CSS, and JavaScript
+						to support fast check-in monitoring, team-level analytics, and real-time
+						progress visibility during live summit workflows.
+					</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href="#overview">Read Case Study</a>
+					</div>
+					<div class="case-action-group" aria-label="Project quick links">
+						<a class="btn btn-primary" href="#" data-optional-link="true" data-url="" hidden>Live Site</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>GitHub Repo</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>Watch Demo</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>Prototype</a>
+						<a class="btn btn-secondary" href="../index.html#projects">Back to Projects</a>
+					</div>
+				</div>
+
+				<aside class="case-card" aria-label="Project details">
+					<ul class="case-meta">
+						<li>
+							<strong>Project Type</strong>
+							<span>Interactive Event Dashboard</span>
+						</li>
+						<li>
+							<strong>Stack</strong>
+							<span>HTML, CSS, JavaScript</span>
+						</li>
+						<li>
+							<strong>Focus Areas</strong>
+							<span>Attendance Tracking, Team Analytics, Live Progress Monitoring</span>
+						</li>
+					</ul>
+				</aside>
+			</div>
+		</section>
+
+		<section class="section" id="media">
+			<div class="container narrow case-layout">
+				<article class="case-card case-media-section">
+					<h2>Featured Visual</h2>
+					<figure class="featured-shot">
+						<img src="../img/projects/intel-dashboard/intel-dashboard-hero.png" alt="Featured hero image for Intel Sustainability Summit Check-In Dashboard" />
+						<figcaption>Main operations dashboard view with attendance, team analytics, and progress indicators.</figcaption>
+					</figure>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="overview">
+			<div class="container narrow case-layout">
+				<article class="case-card">
+					<h2>Overview</h2>
+					<p>
+						This project simulates live event check-in operations for the Intel
+						Sustainability Summit. The dashboard is designed to help organizers quickly
+						track attendance status, monitor team performance, and respond to operational
+						changes with clear, data-driven visibility.
+					</p>
+				</article>
+
+				<article class="case-card" id="problem">
+					<h2>Problem</h2>
+					<p>
+						During high-volume events, check-in data can become difficult to interpret in
+						real time. Teams need a concise operational view that surfaces who is checked in,
+						where bottlenecks are forming, and how progress compares across teams.
+					</p>
+				</article>
+
+				<article class="case-card" id="goals">
+					<h2>Goals</h2>
+					<ul class="case-list">
+						<li>Provide clear attendance tracking at a glance.</li>
+						<li>Enable team-based analytics for quick performance comparison.</li>
+						<li>Visualize event progress dynamically for rapid status checks.</li>
+						<li>Support fast operational decisions during live event conditions.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="approach">
+					<h2>Dashboard Design Approach</h2>
+					<ul class="case-list">
+						<li><strong>Information Hierarchy:</strong> Prioritized high-impact metrics in the first view.</li>
+						<li><strong>Task-Oriented Layout:</strong> Grouped attendance, team analytics, and progress modules by decision flow.</li>
+						<li><strong>Operational Clarity:</strong> Used concise labels and status cues to reduce scan time.</li>
+						<li><strong>Consistency:</strong> Applied repeatable card patterns for easier interpretation under pressure.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="interaction-viz">
+					<h2>Interaction and Data Visualization Decisions</h2>
+					<ul class="case-list">
+						<li>Used dynamic progress visuals to show live completion status.</li>
+						<li>Designed clear states for checked-in, pending, and delayed attendees.</li>
+						<li>Highlighted team-level comparisons to expose operational imbalance quickly.</li>
+						<li>Kept interaction patterns lightweight to maintain performance and responsiveness.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="implementation">
+					<h2>Implementation Highlights</h2>
+					<ul class="case-list">
+						<li>Built with semantic HTML structure for maintainability.</li>
+						<li>Styled using modular CSS sections for reusable dashboard components.</li>
+						<li>Used JavaScript to update live counters and progress indicators.</li>
+						<li>Optimized layout behavior for desktop and tablet event operations.</li>
+					</ul>
+				</article>
+
+				<article class="case-card case-media-section" id="screenshots">
+					<h2>Screenshots and Mockups</h2>
+					<div class="media-grid" aria-label="Project screenshots">
+						<figure class="shot">
+							<img src="../img/projects/intel-dashboard/intel-dashboard-hero.png" alt="Dashboard screenshot 1" />
+							<figcaption>Main dashboard overview with key metrics</figcaption>
+						</figure>
+						<figure class="shot">
+							<img src="../img/projects/intel-dashboard/intel-dashboard-hero.png" alt="Dashboard screenshot 2" />
+							<figcaption>Team analytics comparison module</figcaption>
+						</figure>
+						<figure class="shot">
+							<img src="../img/projects/intel-dashboard/intel-dashboard-hero.png" alt="Dashboard screenshot 3" />
+							<figcaption>Dynamic progress and status tracking state</figcaption>
+						</figure>
+					</div>
+				</article>
+
+				<article class="case-card case-media-section" id="video-walkthrough" data-video-section hidden>
+					<h2>Video Walkthrough (Optional)</h2>
+					<div class="video-embed">
+						<iframe
+							data-video-url=""
+							title="Intel Sustainability Summit dashboard walkthrough video walkthrough"
+							loading="lazy"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<p class="helper-note">Add your walkthrough URL in data-video-url when it is ready.</p>
+				</article>
+
+				<article class="case-card" id="outcome">
+					<h2>Final Outcome</h2>
+					<p>
+						The completed dashboard demonstrates a practical model for live event
+						monitoring. It combines attendance visibility, team performance insights, and
+						real-time progress signals into a single operational interface that supports
+						faster and more confident decision-making.
+					</p>
+				</article>
+
+				<article class="case-card" id="reflection">
+					<h2>Reflections</h2>
+					<ul class="case-list">
+						<li>Dashboard value depends on prioritizing the right metrics at first glance.</li>
+						<li>Simple visual states can reduce cognitive load during live operations.</li>
+						<li>Small interaction details improve monitoring speed and confidence.</li>
+						<li>A next iteration could include role-based views for different operations teams.</li>
+					</ul>
+				</article>
+				<article class="case-card" id="back-links">
+					<h2>Navigation</h2>
+					<div class="case-back-links">
+						<a class="text-link" href="../index.html">Back to Home</a>
+						<a class="text-link" href="../index.html#projects">Back to Projects</a>
+					</div>
+				</article>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Nidhi Lalwani. Designed with care.</p>
+		</div>
+	</footer>
+	<script src="project-page.js"></script>
 </body>
 </html>

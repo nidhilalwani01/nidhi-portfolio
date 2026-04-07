@@ -3,35 +3,233 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>NASA Data Explorer | Nidhi Lalwani</title>
+	<meta
+		name="description"
+		content="NASA Data Explorer case study showcasing immersive storytelling, responsive design, and front-end UX for space imagery and data exploration."
+	/>
+	<title>NASA Data Explorer - Interactive Space Data Experience | Nidhi Lalwani</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+		rel="stylesheet"
+	/>
 	<link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-	<header class="site-header">
+<body class="case-page">
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<header class="site-header" id="top">
 		<div class="container nav-wrap">
 			<a class="brand" href="../index.html" aria-label="Nidhi Lalwani home">
 				<img
 					class="brand-mark"
-					src="../img/Screenshot%202025-05-29%20134319.png"
+					src="../img/logos/nidhi-logo.png"
 					alt="Nidhi Lalwani logo"
 				/>
 			</a>
-			<a class="text-link" href="../index.html#projects">Back to projects</a>
+			<nav class="site-nav" aria-label="Case study links">
+				<ul>
+					<li><a href="#overview">Overview</a></li>
+					<li><a href="#design-direction">Design Direction</a></li>
+					<li><a href="#interaction">Interaction</a></li>
+					<li><a href="#outcome">Outcome</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
-	<main class="section">
-		<div class="container narrow">
-			<p class="eyebrow">Interactive Experience</p>
-			<h1>NASA Data Explorer</h1>
-			<figure class="project-media">
-				<img
-					src="../img/NASA-Logo-Large.jpg"
-					alt="NASA Data Explorer project visual"
-				/>
-			</figure>
-			<p class="hero-copy">An interactive space data experience built to help users explore scientific datasets through filtering and comparison.</p>
-			<p><a class="text-link" href="../index.html">Back to homepage</a></p>
-		</div>
+
+	<main id="main-content">
+		<section class="section case-hero">
+			<div class="container case-hero-grid">
+				<div class="case-card">
+					<p class="eyebrow">Interactive UX and Front-End Case Study</p>
+					<h1>NASA Data Explorer - Interactive Space Data Experience</h1>
+					<p class="case-subtitle">
+						A NASA-inspired web application that combines space imagery and structured data
+						into an immersive storytelling experience with strong discoverability,
+						responsive behavior, and subtle motion interactions.
+					</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href="#overview">Read Case Study</a>
+					</div>
+					<div class="case-action-group" aria-label="Project quick links">
+						<a class="btn btn-primary" href="#" data-optional-link="true" data-url="" hidden>Live Site</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>GitHub Repo</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>Watch Demo</a>
+						<a class="btn btn-secondary" href="#" data-optional-link="true" data-url="" hidden>Prototype</a>
+						<a class="btn btn-secondary" href="../index.html#projects">Back to Projects</a>
+					</div>
+				</div>
+
+				<aside class="case-card" aria-label="Project details">
+					<ul class="case-meta">
+						<li>
+							<strong>Project Type</strong>
+							<span>NASA-Inspired Interactive Data Experience</span>
+						</li>
+						<li>
+							<strong>Focus</strong>
+							<span>Visual Hierarchy, Content Discoverability, Motion Interaction</span>
+						</li>
+						<li>
+							<strong>Discipline</strong>
+							<span>UX Design and Front-End Development</span>
+						</li>
+					</ul>
+				</aside>
+			</div>
+		</section>
+
+		<section class="section" id="media">
+			<div class="container narrow case-layout">
+				<article class="case-card case-media-section">
+					<h2>Featured Visual</h2>
+					<figure class="featured-shot">
+						<img src="../img/projects/nasa-data-explorer/nasa-data-explorer-hero.jpg" alt="Featured hero image for NASA Data Explorer" />
+						<figcaption>Immersive hero visual introducing space imagery and guided data storytelling.</figcaption>
+					</figure>
+				</article>
+			</div>
+		</section>
+
+		<section class="section" id="overview">
+			<div class="container narrow case-layout">
+				<article class="case-card">
+					<h2>Overview</h2>
+					<p>
+						NASA Data Explorer was created as an immersive web experience to help users
+						explore space imagery and related information in a guided, narrative format.
+						The project demonstrates how UX principles and front-end implementation can work
+						together to make technical content more approachable and engaging.
+					</p>
+				</article>
+
+				<article class="case-card" id="problem">
+					<h2>Problem</h2>
+					<p>
+						Space data and educational content can feel overwhelming when presented as
+						isolated fragments. Users need a clearer narrative path, better visual emphasis,
+						and intuitive interactions to discover and interpret information effectively.
+					</p>
+				</article>
+
+				<article class="case-card" id="goals">
+					<h2>Goals</h2>
+					<ul class="case-list">
+						<li>Create an immersive storytelling structure for space content.</li>
+						<li>Improve discoverability of key imagery and data points.</li>
+						<li>Use strong visual hierarchy to guide attention and reading flow.</li>
+						<li>Ensure responsive behavior across desktop and mobile contexts.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="design-direction">
+					<h2>Design Direction</h2>
+					<p>
+						The design direction focused on balancing cinematic visual atmosphere with clear
+						information structure. Imagery was used as a storytelling anchor, while text
+						modules and content groupings maintained clarity and scannability.
+					</p>
+				</article>
+
+				<article class="case-card" id="hierarchy">
+					<h2>Layout and Hierarchy Decisions</h2>
+					<ul class="case-list">
+						<li>Established clear section rhythm to separate narrative chapters.</li>
+						<li>Used contrast, scale, and spacing to prioritize primary messages.</li>
+						<li>Organized supporting data in digestible visual blocks.</li>
+						<li>Maintained consistent navigation cues to reduce cognitive load.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="responsive">
+					<h2>Responsiveness</h2>
+					<ul class="case-list">
+						<li>Applied fluid grid and spacing behavior across breakpoints.</li>
+						<li>Reordered content blocks for better mobile reading flow.</li>
+						<li>Optimized media scaling to preserve visual impact on small screens.</li>
+						<li>Ensured touch-friendly interactions for mobile exploration.</li>
+					</ul>
+				</article>
+
+				<article class="case-card" id="interaction">
+					<h2>Interaction Design</h2>
+					<ul class="case-list">
+						<li>Introduced subtle motion transitions to reinforce content flow.</li>
+						<li>Used hover and state changes to communicate interactivity.</li>
+						<li>Kept animations lightweight to support performance and readability.</li>
+						<li>Prioritized interaction patterns that support exploration without distraction.</li>
+					</ul>
+				</article>
+
+				<article class="case-card case-media-section" id="screenshots">
+					<h2>Screenshots and Mockups</h2>
+					<div class="media-grid" aria-label="Project screenshots">
+						<figure class="shot">
+							<img src="../img/projects/nasa-data-explorer/nasa-data-explorer-hero.jpg" alt="NASA Data Explorer screenshot 1" />
+							<figcaption>Hero storytelling section with primary imagery</figcaption>
+						</figure>
+						<figure class="shot">
+							<img src="../img/projects/nasa-data-explorer/nasa-data-explorer-hero.jpg" alt="NASA Data Explorer screenshot 2" />
+							<figcaption>Data content section with hierarchy cues</figcaption>
+						</figure>
+						<figure class="shot">
+							<img src="../img/projects/nasa-data-explorer/nasa-data-explorer-hero.jpg" alt="NASA Data Explorer screenshot 3" />
+							<figcaption>Responsive mobile or tablet layout</figcaption>
+						</figure>
+					</div>
+				</article>
+
+				<article class="case-card case-media-section" id="video-walkthrough" data-video-section hidden>
+					<h2>Video Walkthrough (Optional)</h2>
+					<div class="video-embed">
+						<iframe
+							data-video-url=""
+							title="NASA Data Explorer walkthrough video walkthrough"
+							loading="lazy"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<p class="helper-note">Add your walkthrough URL in data-video-url when it is ready.</p>
+				</article>
+
+				<article class="case-card" id="outcome">
+					<h2>Final Outcome</h2>
+					<p>
+						The final experience presents space imagery and data in a more structured and
+						engaging format. It demonstrates how thoughtful hierarchy, responsive design,
+						and restrained motion can improve discoverability while preserving an immersive
+						narrative tone.
+					</p>
+				</article>
+
+				<article class="case-card" id="reflection">
+					<h2>Reflections</h2>
+					<ul class="case-list">
+						<li>Immersive visuals are strongest when paired with clear content scaffolding.</li>
+						<li>Hierarchy decisions directly shape user confidence and exploration speed.</li>
+						<li>Subtle motion can improve orientation without overwhelming content.</li>
+						<li>A future iteration could add deeper filtering and comparison tools.</li>
+					</ul>
+				</article>
+				<article class="case-card" id="back-links">
+					<h2>Navigation</h2>
+					<div class="case-back-links">
+						<a class="text-link" href="../index.html">Back to Home</a>
+						<a class="text-link" href="../index.html#projects">Back to Projects</a>
+					</div>
+				</article>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Nidhi Lalwani. Designed with care.</p>
+		</div>
+	</footer>
+	<script src="project-page.js"></script>
 </body>
 </html>
