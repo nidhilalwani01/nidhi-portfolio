@@ -14,11 +14,12 @@
 			href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<a class="skip-link" href="#main-content">Skip to main content</a>
+		<div class="cursor-glow" aria-hidden="true"></div>
 
 		<header class="site-header" id="top">
 			<div class="container nav-wrap">
@@ -52,31 +53,25 @@
 		</header>
 
 		<main id="main-content">
-			<section class="hero section">
-				<div class="container hero-grid">
-					<div>
-						<p class="eyebrow">UI/UX DESIGNER · PRODUCT-FOCUSED · ACCESSIBILITY-MINDED</p>
-						<h1>Designing thoughtful digital experiences where clarity, strategy, and human needs meet.</h1>
+			<section class="hero section" id="home">
+				<div class="hero-overlay" aria-hidden="true"></div>
+				<div class="hero-inner">
+					<div class="hero-glass">
+						<p class="hero-eyebrow">UI/UX DESIGNER · PRODUCT-FOCUSED · ACCESSIBILITY-MINDED</p>
+						<h1 class="hero-title">Designing digital experiences with clarity and purpose.</h1>
 						<p class="hero-copy">
-							I’m Nidhi Lalwani, a UI/UX and product-focused designer with a background in
-							design, technology, and systems thinking. I create digital experiences that
-							balance usability, visual clarity, and business goals — from research and
-							interaction design to front-end execution.
+							I’m <span class="hero-emphasis hero-emphasis-strong">Nidhi Lalwani</span>,
+							a <span class="hero-emphasis">UI/UX and product-focused designer</span> with a background in design,
+							technology, and systems thinking. I create digital experiences that balance
+							<span class="hero-emphasis">usability</span>,
+							<span class="hero-emphasis">visual clarity</span>, and
+							<span class="hero-emphasis">business goals</span> — from research and interaction design to front-end execution.
 						</p>
 						<div class="hero-actions">
-							<a class="btn btn-primary" href="#projects">View Projects</a>
-							<a class="btn btn-secondary" href="#contact">Get In Touch</a>
+							<a class="btn hero-btn hero-btn-primary" href="#projects">View Projects</a>
+							<a class="btn hero-btn hero-btn-secondary" href="#contact">Get In Touch</a>
 						</div>
 					</div>
-					<aside class="hero-panel" aria-label="Professional highlights">
-						<h2>Focus Areas</h2>
-						<ul>
-							<li>End-to-end product thinking</li>
-							<li>Research-informed design decisions</li>
-							<li>Accessibility and interface clarity</li>
-							<li>Front-end collaboration and implementation</li>
-						</ul>
-					</aside>
 				</div>
 			</section>
 
@@ -88,16 +83,16 @@
 							I approach design as a bridge between user needs, business goals, and technical feasibility. My work spans UX research, interaction design, visual systems, and front-end collaboration, with a strong focus on accessibility, clarity, and thoughtful product experiences. I’m especially interested in work that solves real problems while still feeling intuitive and human.
 						</p>
 					</div>
-					<div class="about-visual" aria-hidden="true">
-						<div class="about-lottie-wrap">
-							<lottie-player
-								class="about-lottie"
-								src="https://assets6.lottiefiles.com/packages/lf20_jcikwtux.json"
-								background="transparent"
-								speed="1"
-								loop
-								autoplay
-							></lottie-player>
+					<div class="about-visual">
+						<div class="about-animation-card">
+							<div class="about-animation-stage" aria-label="Looping animation of a designer returning to work after getting coffee">
+								<dotlottie-player
+									class="about-animation-media about-animation-dotlottie is-active"
+									src="https://assets-v2.lottiefiles.com/a/0273ad7a-1170-11ee-9e69-c757b9e5abc0/bhur7Bhw34.lottie"
+									background="transparent"
+									speed="1"
+								></dotlottie-player>
+							</div>
 							<p class="scene-caption">Design mode: activated.</p>
 						</div>
 					</div>
@@ -106,9 +101,9 @@
 
 			<section class="section" id="projects">
 				<div class="container">
-					<div class="section-heading-row">
+					<div class="section-heading-row section-heading-row--projects">
 						<h2>Featured Projects</h2>
-						<p class="section-intro">Selected work across UX strategy, product thinking, accessibility, and front-end design.</p>
+						<p class="section-intro">A curated selection of UX and product case studies.</p>
 					</div>
 					<!--
 						PROJECT CARD SYSTEM
@@ -237,19 +232,38 @@
 			<section class="section" id="skills">
 				<div class="container">
 					<h2>Skills &amp; Tools</h2>
-					<div class="chip-group" aria-label="Skills and tools list">
-						<span class="chip">UX Research</span>
-						<span class="chip">Information Architecture</span>
-						<span class="chip">Wireframing</span>
-						<span class="chip">Prototyping</span>
-						<span class="chip">Interaction Design</span>
-						<span class="chip">Design Systems</span>
-						<span class="chip">Accessibility (WCAG)</span>
-						<span class="chip">Figma</span>
-						<span class="chip">HTML</span>
-						<span class="chip">CSS</span>
-						<span class="chip">JavaScript</span>
-						<span class="chip">Usability Testing</span>
+					<div class="skills-grid" aria-label="Skills and tools by category">
+						<section class="skill-category" aria-labelledby="skills-ux-design">
+							<h3 class="skill-heading" id="skills-ux-design">UX Design</h3>
+							<div class="chip-group" aria-label="UX Design skills">
+								<span class="chip skill-pill primary-skill">UX Research</span>
+								<span class="chip skill-pill primary-skill">Information Architecture</span>
+								<span class="chip skill-pill secondary-skill">Wireframing</span>
+								<span class="chip skill-pill secondary-skill">Prototyping</span>
+								<span class="chip skill-pill primary-skill">Interaction Design</span>
+								<span class="chip skill-pill secondary-skill">Usability Testing</span>
+							</div>
+						</section>
+
+						<section class="skill-category" aria-labelledby="skills-systems-accessibility">
+							<h3 class="skill-heading" id="skills-systems-accessibility">Systems &amp; Accessibility</h3>
+							<div class="chip-group" aria-label="Systems and accessibility skills">
+								<span class="chip skill-pill primary-skill">Design Systems</span>
+								<span class="chip skill-pill primary-skill">Accessibility (WCAG)</span>
+								<span class="chip skill-pill secondary-skill">Content Hierarchy</span>
+								<span class="chip skill-pill secondary-skill">UX Writing</span>
+							</div>
+						</section>
+
+						<section class="skill-category" aria-labelledby="skills-frontend-tools">
+							<h3 class="skill-heading" id="skills-frontend-tools">Front-End &amp; Tools</h3>
+							<div class="chip-group" aria-label="Front-end and tools skills">
+								<span class="chip skill-pill primary-skill">HTML</span>
+								<span class="chip skill-pill primary-skill">CSS</span>
+								<span class="chip skill-pill secondary-skill">JavaScript</span>
+								<span class="chip skill-pill primary-skill">Figma</span>
+							</div>
+						</section>
 					</div>
 				</div>
 			</section>
